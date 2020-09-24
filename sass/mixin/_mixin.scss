@@ -1,0 +1,38 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin sm {
+  @media (min-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: ($xl)) {
+    @content;
+  }
+}
+
+@mixin btn {
+  display: block;
+  width: 235px;
+  background-color: #F7D43F;
+  padding: 18px 71px;
+  color: #171717;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
